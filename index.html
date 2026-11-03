@@ -1,13 +1,1192 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>notesapp</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("motion")</script><meta name="description" content="Suyog Nagawade, React Native mobile app developer building beautiful Android and iOS apps."><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Suyog Nagawade | React Native Mobile App Developer</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 z-50 px-gutter-mobile md:px-gutter py-space-sm"><div class="max-w-7xl mx-auto"><div class="h-20 bg-surface-bright/85 backdrop-blur-xl rounded-full px-space-md lg:px-space-lg flex items-center justify-between shadow-[0_16px_36px_rgba(37,35,51,0.08)]"><button type="button" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="xl:hidden w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface"><span class="material-symbols-outlined text-[20px]">menu</span></button><nav class="hidden xl:flex items-center gap-1 bg-surface-container-low/90 rounded-full px-2 py-1.5 shadow-[inset_0_2px_6px_rgba(37,35,51,0.04)]" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-full"><a aria-current="page" class="px-3.5 py-1.5 transition-all bg-primary-container text-on-primary-container font-label-lg rounded-full" data-path="home" href="#home">Home</a><a class="px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="about" href="#about">About</a><a class="px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="projects" href="#projects">Projects</a><a class="px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="skills" href="#skills">Skills</a><a class="px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="experience" href="#experience">Experience</a><a class="px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="certifications" href="#certifications">Certifications</a><a class="px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="lab" href="#lab">Lab</a><a class="px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-all" data-path="contact" href="#contact">Contact</a></nav><div class="ml-auto flex items-center gap-space-xs"><a class="whitespace-nowrap shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary font-label-lg text-label-lg shadow-[0_8px_20px_rgba(253,139,118,0.28)] transition-all hover:scale-[1.03] active:scale-[0.97]" href="/resume.pdf" download="Suyog-Nagawade-Resume.pdf"><span class="material-symbols-outlined text-[18px]">download</span><span class="hidden md:inline">Download Resume</span><span class="md:hidden">CV</span></a><a aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors shadow-[0_2px_8px_rgba(37,35,51,0.06)]" href="https://www.linkedin.com/in/suyog-nagawade/" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="w-[20px] h-[20px] shrink-0"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.725 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 4.892v6.249zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a aria-label="GitHub" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors shadow-[0_2px_8px_rgba(37,35,51,0.06)]" href="https://github.com/Suyog8383" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" class="w-[20px] h-[20px] shrink-0"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div></div><div id="mobile-menu" hidden class="xl:hidden mt-2 p-2 rounded-3xl bg-surface-bright/95 backdrop-blur-xl shadow-[0_16px_36px_rgba(37,35,51,0.12)]"><a class="block px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface hover:bg-surface-container" data-path="home" href="#home">Home</a><a class="block px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface hover:bg-surface-container" data-path="about" href="#about">About</a><a class="block px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface hover:bg-surface-container" data-path="projects" href="#projects">Projects</a><a class="block px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface hover:bg-surface-container" data-path="skills" href="#skills">Skills</a><a class="block px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface hover:bg-surface-container" data-path="experience" href="#experience">Experience</a><a class="block px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface hover:bg-surface-container" data-path="certifications" href="#certifications">Certifications</a><a class="block px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface hover:bg-surface-container" data-path="lab" href="#lab">Lab</a><a class="block px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface hover:bg-surface-container" data-path="contact" href="#contact">Contact</a></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full overflow-hidden">
+<!-- HERO SECTION -->
+<section id="home" data-hero class="relative w-full px-gutter-mobile md:px-gutter py-space-xl lg:py-24 bg-surface overflow-hidden">
+<!-- Ambient organic backdrop blobs -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-fixed/40 blur-3xl pointer-events-none -z-0" data-depth="-0.4"></div>
+<div class="absolute top-1/3 -right-20 w-[30rem] h-[30rem] rounded-full bg-secondary-fixed/50 blur-3xl pointer-events-none -z-0" data-depth="-0.4"></div>
+<div class="absolute -bottom-20 left-1/4 w-80 h-80 rounded-full bg-tertiary-fixed/60 blur-3xl pointer-events-none -z-0" data-depth="-0.4"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left Column: Editorial Punch -->
+<div data-hero-copy class="lg:col-span-6 flex flex-col items-start space-y-6">
+<!-- Pulsing Status Badge -->
+<div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-tertiary-fixed text-on-tertiary-fixed shadow-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+</span>
+<span class="font-label-lg text-label-lg tracking-wide">👋 Available for exciting mobile opportunities</span>
+</div>
+<!-- Main Hero Headline -->
+<h1 class="font-display-hero text-headline-lg lg:text-display-hero text-on-surface leading-[1.08] tracking-tight">
+            Hey, I'm Suyog.<br/>
+            I Build <span class="bg-gradient-to-r from-primary via-secondary to-secondary-container bg-clip-text text-transparent underline decoration-secondary-fixed decoration-wavy decoration-4">Mobile Apps</span> That People Love.
+          </h1>
+<!-- Lead Body Copy -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            I'm a React Native Developer passionate about building beautiful, scalable and high-performance mobile applications for Android and iOS.
+          </p>
+<!-- Micro Highlight Tagline -->
+<div class="p-4 rounded-2xl bg-surface-container-low max-w-lg shadow-sm">
+<p class="font-label-lg text-label-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">bolt</span>
+              Turning creative ideas into real-world mobile experiences with React Native, Expo and modern technologies.
+            </p>
+</div>
+<!-- Primary CTA Row -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-lg hover:shadow-xl hover:scale-[1.03] active:scale-[0.97] transition-all" href="#projects">
+<span>Explore My Work</span>
+<span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg shadow-sm hover:bg-secondary-fixed-dim hover:scale-[1.02] active:scale-[0.98] transition-all" href="/resume.pdf" download="Suyog-Nagawade-Resume.pdf">
+<span class="material-symbols-outlined text-[20px]">description</span>
+<span>Download Resume</span>
+</a>
+</div>
+<!-- Socials & Handwritten Note -->
+<div class="pt-4 flex flex-col sm:flex-row sm:items-center gap-4 text-on-surface-variant">
+<div class="flex items-center gap-2">
+<a aria-label="GitHub" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors shadow-sm" href="https://github.com/Suyog8383" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" class="w-[20px] h-[20px] shrink-0"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+<a aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors shadow-sm" href="https://www.linkedin.com/in/suyog-nagawade/" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="w-[20px] h-[20px] shrink-0"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.725 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 4.892v6.249zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</a>
+<a aria-label="Email" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors shadow-sm" href="mailto:suyog@example.com">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</a>
+</div>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<span class="font-label-lg text-label-lg italic text-secondary flex items-center gap-1.5">
+<span>Crafting experiences, one screen at a time</span>
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+</span>
+</div>
+</div>
+<!-- Right Column: 3D Multi-Device Composition -->
+<div class="lg:col-span-6 relative flex items-center justify-center min-h-[540px] lg:min-h-[620px] select-none">
+<!-- Floating Playful Stickers -->
+<div class="absolute -top-4 left-6 z-30 px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-primary shadow-md font-label-sm text-label-sm flex items-center gap-1.5 rotate-[-8deg]" data-depth="1.6" data-float="sticker">
+<span class="material-symbols-outlined text-[16px] text-tertiary">speed</span>
+<span>React Native</span>
+</div>
+<div class="absolute top-10 right-4 z-30 px-3.5 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed shadow-md font-label-sm text-label-sm flex items-center gap-1.5 rotate-[7deg]" data-depth="1.6" data-float="sticker">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Expo SDK 52</span>
+</div>
+<div class="absolute bottom-6 left-8 z-30 px-3.5 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed shadow-md font-label-sm text-label-sm flex items-center gap-1.5 rotate-[-5deg]" data-depth="1.6" data-float="sticker">
+<span class="material-symbols-outlined text-[16px]">family_restroom</span>
+<span>Parenting Community</span>
+</div>
+<div class="absolute bottom-20 right-2 z-30 px-3.5 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed shadow-md font-label-sm text-label-sm flex items-center gap-1.5 rotate-[6deg]" data-depth="1.6" data-float="sticker">
+<span class="material-symbols-outlined text-[16px]">local_hospital</span>
+<span>SMART on FHIR</span>
+</div>
+<!-- SMARTPHONE 1 (Left Tilt, OrganOptima Healthcare) -->
+<div data-depth="0.7" data-float="phone1" class="absolute left-0 sm:left-4 z-10 w-60 sm:w-64 rounded-[2.5rem] p-2 bg-on-surface shadow-2xl rotate-[-10deg] hover:rotate-[-4deg] transition-transform duration-500 hover:z-30">
+<div class="relative w-full h-[470px] rounded-[2.2rem] bg-surface-container-lowest overflow-hidden flex flex-col">
+<!-- Notch / Dynamic Island -->
+<div class="h-6 w-full flex items-center justify-center pt-1.5">
+<div class="w-16 h-3.5 rounded-full bg-on-surface"></div>
+</div>
+<!-- App Header -->
+<div class="px-3.5 pt-2 pb-2 bg-secondary-fixed/50 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">favorite</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed">OrganOptima</span>
+</div>
+<span class="px-1.5 py-0.5 rounded-full bg-error text-on-error font-label-sm text-[10px]">STAT</span>
+</div>
+<!-- Card Content -->
+<div class="p-3 space-y-2.5 overflow-hidden flex-1 text-xs">
+<!-- Transplant Alert Card -->
+<div class="p-2.5 rounded-2xl bg-secondary-fixed/30 space-y-1.5">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-[11px] text-on-surface">Kidney Match Offer</span>
+<span class="font-label-sm text-[9px] text-secondary font-bold">#ORD-9021</span>
+</div>
+<p class="text-[10px] text-on-surface-variant">Cold Ischemia: 3h 12m remaining</p>
+<div class="flex gap-1.5 pt-1">
+<button class="flex-1 py-1 rounded-full bg-secondary text-on-secondary text-[10px] font-semibold text-center">Accept</button>
+<button class="flex-1 py-1 rounded-full bg-surface-container-high text-on-surface text-[10px] font-semibold text-center">Decline</button>
+</div>
+</div>
+<!-- Surgeon Communication -->
+<div class="p-2 rounded-xl bg-surface-container-low space-y-1">
+<div class="flex items-center gap-1.5">
+<div class="w-5 h-5 rounded-full bg-primary-fixed flex items-center justify-center text-[10px] font-bold text-on-primary-fixed">DR</div>
+<span class="font-label-sm text-[10px] text-on-surface">Dr. Aris (Lead Surgeon)</span>
+</div>
+<p class="text-[10px] text-on-surface-variant line-clamp-2">"OR-3 is prepped. Awaiting crossmatch results from lab."</p>
+</div>
+<!-- Live Timeline Mini -->
+<div class="space-y-1 pt-1">
+<div class="flex items-center gap-2 text-[10px]">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-on-surface font-medium">Procurement Complete</span>
+</div>
+<div class="flex items-center gap-2 text-[10px]">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-primary font-medium">In Transit via MediFlight</span>
+</div>
+</div>
+</div>
+<!-- Device Home Bar -->
+<div class="h-4 flex items-center justify-center">
+<div class="w-24 h-1 rounded-full bg-on-surface/30"></div>
+</div>
+</div>
+</div>
+<!-- SMARTPHONE 2 (Center Hero, Rainyday Parenting Community) -->
+<div data-depth="1" data-float="phone2" class="relative z-20 w-64 sm:w-72 rounded-[2.75rem] p-2.5 bg-on-surface shadow-[0_28px_60px_-15px_rgba(97,62,210,0.3)] hover:scale-105 transition-transform duration-500">
+<div class="relative w-full h-[520px] rounded-[2.35rem] bg-surface-container-lowest overflow-hidden flex flex-col">
+<!-- Gloss Reflection Layer -->
+<div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-transparent via-surface-container-lowest/20 to-surface-bright/40 z-20"></div>
+<!-- Dynamic Island Bar -->
+<div class="h-7 w-full flex items-center justify-between px-5 pt-2 z-10">
+<span class="font-label-sm text-[11px] font-bold text-on-surface">9:41</span>
+<div class="w-20 h-4 rounded-full bg-on-surface flex items-center justify-end px-2">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+</div>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[13px]">wifi</span>
+<span class="material-symbols-outlined text-[13px]">battery_full</span>
+</div>
+</div>
+<!-- Rainyday App Bar -->
+<div class="px-4 py-2 flex items-center justify-between z-10">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-extrabold tracking-tight">Rainyday</h3>
+<p class="font-label-sm text-[10px] text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">location_on</span> Your neighborhood
+                  </p>
+</div>
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">notifications</span>
+</div>
+</div>
+<div class="px-4 space-y-3 z-10 flex-1">
+<!-- Category chips -->
+<div class="grid grid-cols-2 gap-2">
+<div class="p-3 rounded-2xl bg-tertiary-fixed/40 space-y-1">
+<span class="material-symbols-outlined text-[18px] text-tertiary">event</span>
+<div class="text-[12px] font-bold text-on-tertiary-fixed leading-tight">Activities</div>
+<span class="text-[9px] text-tertiary font-semibold">Near you</span>
+</div>
+<div class="p-3 rounded-2xl bg-primary-fixed/40 space-y-1">
+<span class="material-symbols-outlined text-[18px] text-primary">diversity_3</span>
+<div class="text-[12px] font-bold text-on-primary-fixed leading-tight">Parents</div>
+<span class="text-[9px] text-primary font-semibold">In your area</span>
+</div>
+</div>
+<!-- Featured activity -->
+<div class="p-3 rounded-2xl bg-surface-container-low space-y-1.5">
+<div class="flex items-center justify-between text-[11px] font-semibold text-on-surface">
+<span>This weekend</span>
+<span class="text-primary font-bold">See all</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-xl bg-surface-container-lowest">
+<span class="w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center material-symbols-outlined text-[16px] text-tertiary">palette</span>
+<div class="leading-tight"><span class="text-[10px] font-bold text-on-surface block">Art &amp; Craft Morning</span><span class="text-[9px] text-on-surface-variant">Community centre</span></div>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-xl bg-surface-container-lowest">
+<span class="w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center material-symbols-outlined text-[16px] text-tertiary">menu_book</span>
+<div class="leading-tight"><span class="text-[10px] font-bold text-on-surface block">Story Time</span><span class="text-[9px] text-on-surface-variant">Neighborhood library</span></div>
+</div>
+</div>
+<!-- Community post -->
+<div class="p-2.5 rounded-2xl bg-secondary-fixed/30 flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">forum</span>
+<div class="text-[10px] leading-tight text-on-secondary-fixed space-y-0.5">
+<span class="font-bold">Local tip:</span>
+<p class="text-on-surface-variant">Indoor play area just opened near the park.</p>
+</div>
+</div>
+</div>
+<!-- Bottom Tab Bar -->
+<div class="h-12 bg-surface-container-lowest px-4 flex items-center justify-around z-10 border-none">
+<span class="material-symbols-outlined text-primary text-[20px]">home</span>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">explore</span>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">forum</span>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">account_circle</span>
+</div>
+<div class="h-3 flex items-center justify-center pb-1">
+<div class="w-24 h-1 rounded-full bg-on-surface/40"></div>
+</div>
+</div>
+</div>
+<!-- SMARTPHONE 3 (Right Tilt, Lifestyle / Animated Commerce) -->
+<div data-depth="0.8" data-float="phone3" class="absolute right-0 sm:right-4 z-10 w-60 sm:w-64 rounded-[2.5rem] p-2 bg-on-surface shadow-2xl rotate-[10deg] hover:rotate-[4deg] transition-transform duration-500 hover:z-30 hidden sm:block">
+<div class="relative w-full h-[470px] rounded-[2.2rem] bg-surface-container-lowest overflow-hidden flex flex-col">
+<div class="h-6 w-full flex items-center justify-center pt-1.5">
+<div class="w-16 h-3.5 rounded-full bg-on-surface"></div>
+</div>
+<div class="p-3 flex items-center justify-between">
+<div>
+<span class="text-[10px] uppercase font-bold text-outline">Collection</span>
+<div class="font-headline-sm text-[12px] text-on-surface font-extrabold">Aura Audio</div>
+</div>
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-on-surface">shopping_bag</span>
+</div>
+</div>
+<!-- Product Image Showcase -->
+<div class="px-3">
+<div class="w-full h-32 rounded-2xl bg-surface-container-high overflow-hidden relative flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="High-end minimalist pastel wireless headphones resting on soft lavender surface studio lighting crisp product photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq0sjnjuRrpYPxPVSVhrd0tOAcxd-YjBMCuqx8KF0r4LLiatT50U34AiP_Ge0ulMoQ8cFWXSpoEZr_em63mfgkzcuKDVnDf688QD1_HHVyd756JC7YQLmU0bn7-9RVJN6LOkcHT4LPKj4ZOS88XUc3VMSRXwc7ycbG4mpTnggjcA-rAYEyPbruYIJEigEbRLcICUtHftgsWmY7s7rgnuAc8mXUqdLQA-Hkp6fBnpUt"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-[9px] font-bold text-on-surface">Spatial Audio</span>
+</div>
+</div>
+<div class="p-3 space-y-2 flex-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-bold text-on-surface">Pulse Pro Headset</span>
+<span class="text-primary font-bold">$249</span>
+</div>
+<div class="p-2 rounded-xl bg-primary-fixed/30 flex items-center justify-between text-[10px]">
+<span class="text-on-primary-fixed font-medium">Reanimated 3 Physics</span>
+<span class="text-primary font-bold">Active</span>
+</div>
+<button class="w-full py-2 rounded-full bg-on-surface text-surface-bright text-[11px] font-bold flex items-center justify-center gap-1">
+<span>Add to Bag</span>
+<span class="material-symbols-outlined text-[12px]">arrow_forward</span>
+</button>
+</div>
+<div class="h-4 flex items-center justify-center">
+<div class="w-24 h-1 rounded-full bg-on-surface/30"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TECHNOLOGY MARQUEE -->
+<section class="w-full py-8 bg-surface-container-low overflow-hidden select-none">
+<div class="max-w-7xl mx-auto px-gutter-mobile md:px-gutter mb-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+        Tools I Love Building With
+      </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden md:inline">From Fabric Engine to Edge AI Workflows</span>
+</div>
+<!-- Scrolling Track -->
+<div class="flex overflow-hidden space-x-4 py-2 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+<div data-marquee-track class="flex space-x-4 animate-[marquee_28s_linear_infinite] shrink-0">
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">phone_iphone</span>
+<span>React Native 0.76</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">rocket</span>
+<span>Expo SDK 52</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">code</span>
+<span>TypeScript 5</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary text-[18px]">javascript</span>
+<span>JavaScript (ESNext)</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">dns</span>
+<span>Node.js &amp; Fastify</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+<span>Firebase &amp; Firestore</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">database</span>
+<span>PostgreSQL</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-secondary text-[18px]">cloud</span>
+<span>AWS Amplify</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">gesture</span>
+<span>Reanimated 3</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+<span>Claude Code MCP</span>
+</div>
+</div>
+<!-- Duplicate for infinite seamless loop -->
+<div aria-hidden="true" data-marquee-track class="flex space-x-4 animate-[marquee_28s_linear_infinite] shrink-0">
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">phone_iphone</span>
+<span>React Native 0.76</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">rocket</span>
+<span>Expo SDK 52</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">code</span>
+<span>TypeScript 5</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary text-[18px]">javascript</span>
+<span>JavaScript (ESNext)</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">dns</span>
+<span>Node.js &amp; Fastify</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+<span>Firebase &amp; Firestore</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">database</span>
+<span>PostgreSQL</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-secondary text-[18px]">cloud</span>
+<span>AWS Amplify</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">gesture</span>
+<span>Reanimated 3</span>
+</div>
+<div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+<span>Claude Code MCP</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT ME SECTION -->
+<section class="w-full px-gutter-mobile md:px-gutter py-space-xl bg-surface-container-low" id="about">
+<div class="max-w-7xl mx-auto space-y-12">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Behind The Code</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">A Little About Me</h2>
+</div>
+<p class="font-title-md text-title-md text-on-surface-variant max-w-md">
+          Developer by profession, tactile creator by passion. Living at the intersection of mobile software and human empathy.
+        </p>
+</div>
+<!-- Content Split Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left Column: Avatar & Vibe Card -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-3xl p-8 shadow-sm flex flex-col gap-6 relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-48 h-48 rounded-full bg-primary-fixed/40 blur-2xl pointer-events-none"></div>
+<!-- Stylized Avatar Area -->
+<div class="relative pt-2 flex-1 flex flex-col">
+<div class="relative w-full flex-1 min-h-[16rem] rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-primary-fixed via-surface-container to-secondary-fixed">
+<!-- Replace with your photo: <img class="w-full h-full object-cover" src="/profile.jpg" alt="Suyog Nagawade"> --><div class="w-full h-full flex items-center justify-center" role="img" aria-label="Suyog Nagawade"><span class="font-display-hero text-[96px] leading-none font-bold text-primary/80 tracking-tight">SN</span></div>
+</div>
+<!-- Floating Tech Stickers Over Avatar -->
+<div class="absolute top-0 left-4 z-10 px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-[11px] shadow-md rotate-[-6deg]">
+              Mobile Dev 📱
+            </div>
+<div class="absolute -bottom-3 right-4 z-10 px-3 py-1 rounded-full bg-tertiary text-on-tertiary font-label-sm text-[11px] shadow-md rotate-[8deg]">
+              HealthTech 🩺
+            </div>
+</div>
+<!-- Geo Badge & Core Bio Quote -->
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+<span>Based in Pune, India 🇮🇳 • Open to Global Roles</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              "Building for mobile isn't just about putting buttons on a screen. It's about respecting battery life, touch latency, frame drops, and the emotional connection people have with the devices they use every day."
+            </p>
+</div>
+<!-- Quick Metrics Bar -->
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="p-3.5 rounded-2xl bg-primary-fixed/40">
+<span class="font-display-hero text-headline-sm text-on-primary-fixed font-bold leading-none block">3+</span>
+<span class="font-label-sm text-label-sm text-primary">Years Experience</span>
+</div>
+<div class="p-3.5 rounded-2xl bg-secondary-fixed/40">
+<span class="font-display-hero text-headline-sm text-on-secondary-fixed font-bold leading-none block">Android</span>
+<span class="font-label-sm text-label-sm text-secondary">&amp; iOS</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Story Copy & 4 Micro Cards -->
+<div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+<div class="bg-surface-container-lowest rounded-3xl p-8 shadow-sm space-y-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">The Craft Behind The Screens</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              I am a Software Engineer specializing in high-velocity React Native mobile engineering. Over the past several years, I've had the privilege of architecting applications that doctors rely on during critical organ transplant surgeries and crafting hardware-connected IoT dashboards that process ambient telemetry in real time.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              My engineering philosophy revolves around zero-lag interaction models, TypeScript safety, Bridgeless React Native architectures, and integrating modern AI agents like Claude Code MCP directly into production developer workflows.
+            </p>
+</div>
+<!-- 4 Feature Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm space-y-2 hover:translate-y-[-2px] transition-transform">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">devices</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface">Cross-Platform Mastery</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Unified codebases delivering native-feeling iOS and Android gestures without platform compromises.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm space-y-2 hover:translate-y-[-2px] transition-transform">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">health_and_safety</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface">Healthcare Technology</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Deep exposure to HIPAA-compliant protocols, SMART on FHIR interoperability, and critical alerts.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm space-y-2 hover:translate-y-[-2px] transition-transform">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">memory</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface">AI &amp; IoT Integration</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Real-time telemetry pipelines from ESP32 microcontrollers straight to mobile LLM copilot interfaces.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm space-y-2 hover:translate-y-[-2px] transition-transform">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">electric_bolt</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface">Continuous Learning</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Always adopting bleeding-edge releases: React Native New Architecture, TurboModules &amp; Reanimated 3.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MY JOURNEY / STATS HIGHLIGHTS -->
+<section class="w-full px-gutter-mobile md:px-gutter py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="bg-surface-container rounded-3xl p-8 lg:p-12 shadow-sm">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center sm:text-left">
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm space-y-2">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Experience</span>
+<div class="font-display-hero text-headline-lg font-extrabold text-on-surface">3+ Years</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Engineering production mobile clients with React Native and Expo.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm space-y-2">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Ecosystems</span>
+<div class="font-display-hero text-headline-lg font-extrabold text-on-surface">iOS &amp; Android</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Dual-store release pipelines, provisioning profiles, and App Store review mastery.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm space-y-2">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Domain Focus</span>
+<div class="font-display-hero text-headline-lg font-extrabold text-on-surface">HealthTech</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Clinical organ procurement workflows, push notifications, and HIPAA safeguards.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm space-y-2">
+<span class="font-label-sm text-label-sm text-primary-container font-bold uppercase tracking-wider">Hardware + LLM</span>
+<div class="font-display-hero text-headline-lg font-extrabold text-on-surface">AI &amp; IoT</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Physical micro-sensors integrated with mobile WebSocket telemetry and agentic AI.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURED PROJECTS SHOWCASE -->
+<section class="w-full px-gutter-mobile md:px-gutter py-space-xl bg-surface-container-low space-y-16" id="projects">
+<div class="max-w-7xl mx-auto space-y-12">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm mb-2">
+<span class="material-symbols-outlined text-[16px]">folder_special</span>
+<span>Flagship Portfolios</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Things I've Built 🚀</h2>
+</div>
+<p class="font-title-md text-title-md text-on-surface-variant max-w-lg">
+          A collection of published mobile apps, community platforms, and production clinical applications.
+        </p>
+</div>
+<!-- PROJECT 1: Rainyday – Parenting Community (Mint + Lavender Hero Card) -->
+<div class="rounded-3xl bg-tertiary-fixed/30 p-8 lg:p-12 shadow-sm hover:shadow-md transition-shadow">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left Details -->
+<div class="lg:col-span-6 space-y-6">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">Parenting Community</span>
+</div>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-on-surface font-bold">
+              Rainyday – Parenting Community
+            </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              A local parenting app that helps parents find nearby children’s activities, share useful information, and connect with other parents in their neighborhood, all in one place. Built to make everyday parenting easier, so families spend less time searching and more time doing.
+            </p>
+<!-- Feature Bullet List -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+<div class="flex items-center gap-2 text-on-surface font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-tertiary text-[20px]">location_on</span>
+<span>Nearby Kids’ Activities</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-tertiary text-[20px]">forum</span>
+<span>Share Local Information</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-tertiary text-[20px]">diversity_3</span>
+<span>Connect with Local Parents</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-tertiary text-[20px]">home_pin</span>
+<span>Neighborhood Focused</span>
+</div>
+</div>
+<!-- Tech Pills -->
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-sm font-semibold">React Native</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-sm font-semibold">Android</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-sm font-semibold">Location Based</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-sm font-semibold">Community</span>
+</div>
+<!-- Links -->
+<div class="pt-4 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-tertiary text-on-tertiary font-label-lg text-label-lg shadow-md hover:scale-105 active:scale-95 transition-all" href="https://play.google.com/store/apps/details?id=com.rainydayparents" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="w-[18px] h-[18px] shrink-0"><path d="M3.6 1.8a1.5 1.5 0 0 0-.6 1.2v18a1.5 1.5 0 0 0 .6 1.2l10.1-10.2L3.6 1.8Zm11.5 8.8L5.4.9l12.4 7.1-2.7 2.6Zm0 2.8 2.7 2.6L5.4 23.1l9.7-9.7Zm3.9-4.7 3 1.7a1.5 1.5 0 0 1 0 2.6l-3 1.7-3-3 3-3Z"/></svg>
+<span>Get it on Google Play</span>
+</a>
+</div>
+</div>
+<!-- Right Mockup Visual (Dual Overlapping Phones) -->
+<div class="lg:col-span-6 relative flex items-center justify-center min-h-[420px]">
+<!-- Phone A: Nearby Activities -->
+<div class="w-56 sm:w-60 rounded-[2.2rem] p-2 bg-on-surface shadow-xl rotate-[-6deg] z-10 hover:rotate-0 transition-transform">
+<div class="w-full h-80 rounded-[1.8rem] bg-surface-container-lowest p-3.5 flex flex-col gap-2">
+<div class="h-3 w-16 bg-on-surface mx-auto rounded-full mb-1"></div>
+<div class="flex justify-between items-center">
+<span class="text-[11px] font-bold text-on-surface">Activities near you</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">location_on</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-xl bg-tertiary-fixed/40">
+<span class="w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center material-symbols-outlined text-[16px] text-tertiary">palette</span>
+<div class="leading-tight"><span class="text-[10px] font-bold text-on-surface block">Art &amp; Craft Morning</span><span class="text-[9px] text-on-surface-variant">Community centre</span></div>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-xl bg-primary-fixed/40">
+<span class="w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center material-symbols-outlined text-[16px] text-tertiary">pool</span>
+<div class="leading-tight"><span class="text-[10px] font-bold text-on-surface block">Toddler Swim</span><span class="text-[9px] text-on-surface-variant">Local pool</span></div>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-xl bg-secondary-fixed/40">
+<span class="w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center material-symbols-outlined text-[16px] text-tertiary">menu_book</span>
+<div class="leading-tight"><span class="text-[10px] font-bold text-on-surface block">Story Time</span><span class="text-[9px] text-on-surface-variant">Neighborhood library</span></div>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-xl bg-surface-container-low">
+<span class="w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center material-symbols-outlined text-[16px] text-tertiary">park</span>
+<div class="leading-tight"><span class="text-[10px] font-bold text-on-surface block">Park Playdate</span><span class="text-[9px] text-on-surface-variant">Nearby park</span></div>
+</div>
+</div>
+</div>
+<!-- Phone B: Parent Community -->
+<div class="w-56 sm:w-60 rounded-[2.2rem] p-2 bg-on-surface shadow-2xl rotate-[6deg] z-20 -ml-16 sm:-ml-12 hover:rotate-0 transition-transform">
+<div class="w-full h-88 rounded-[1.8rem] bg-surface-container-lowest p-3.5 flex flex-col gap-2.5">
+<div class="h-3 w-16 bg-on-surface mx-auto rounded-full mb-1"></div>
+<span class="text-[11px] font-bold text-on-surface block">Parent Community</span>
+<div class="p-2.5 rounded-xl bg-primary-fixed/30 space-y-1">
+<div class="flex items-center gap-1.5"><span class="w-5 h-5 rounded-full bg-primary-fixed flex items-center justify-center material-symbols-outlined text-[12px] text-primary">person</span><span class="text-[10px] font-bold text-on-surface">Local parent</span></div>
+<p class="text-[10px] text-on-surface-variant">Any indoor play spots open this weekend? It’s going to rain!</p>
+</div>
+<div class="p-2.5 rounded-xl bg-secondary-fixed/40 space-y-1">
+<div class="flex items-center gap-1.5"><span class="w-5 h-5 rounded-full bg-secondary-fixed flex items-center justify-center material-symbols-outlined text-[12px] text-secondary">person</span><span class="text-[10px] font-bold text-on-surface">Neighbor</span></div>
+<p class="text-[10px] text-on-surface-variant">The library has a kids’ corner on Saturdays 📚</p>
+</div>
+<div class="mt-auto flex items-center gap-1.5 p-2 rounded-full bg-surface-container-low text-[10px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">chat_bubble</span><span>Share something helpful…</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PROJECT 2: OrganOptima – Transplant Call & Kidney Call (Peach + Coral Theme) -->
+<div class="rounded-3xl bg-secondary-fixed/30 p-8 lg:p-12 shadow-sm hover:shadow-md transition-shadow">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left Details -->
+<div class="lg:col-span-7 space-y-6">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">HealthTech</span>
+</div>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-on-surface font-bold">
+              OrganOptima Kidney Transplant Apps
+            </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Two connected mobile apps for kidney transplants. When a kidney offer becomes available, every minute matters, so transplant centre teams and their patients can review offers, respond on time, and stay in touch securely.
+            </p>
+<!-- The two apps -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="rounded-2xl bg-surface-container-lowest p-5 space-y-3 shadow-sm flex flex-col">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center material-symbols-outlined text-secondary text-[22px]">local_hospital</span>
+<div class="leading-tight">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Transplant Call</h4>
+<span class="text-xs text-on-surface-variant">For transplant centre teams</span>
+</div>
+</div>
+<ul class="space-y-1.5 text-sm text-on-surface flex-1">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span><span>Review kidney donor offers from OPOs</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span><span>Accept or decline and assign matching patients</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span><span>Reminders before an offer expires</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span><span>Secure team chat with OPO coordinators</span></li>
+</ul>
+<a class="self-start inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold shadow-sm hover:scale-105 active:scale-95 transition-all" href="https://play.google.com/store/apps/details?id=com.organoptima.transplantcenterapp.production" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0"><path d="M3.6 1.8a1.5 1.5 0 0 0-.6 1.2v18a1.5 1.5 0 0 0 .6 1.2l10.1-10.2L3.6 1.8Zm11.5 8.8L5.4.9l12.4 7.1-2.7 2.6Zm0 2.8 2.7 2.6L5.4 23.1l9.7-9.7Zm3.9-4.7 3 1.7a1.5 1.5 0 0 1 0 2.6l-3 1.7-3-3 3-3Z"/></svg><span>Google Play</span></a>
+</div>
+<div class="rounded-2xl bg-surface-container-lowest p-5 space-y-3 shadow-sm flex flex-col">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center material-symbols-outlined text-secondary text-[22px]">favorite</span>
+<div class="leading-tight">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Kidney Call</h4>
+<span class="text-xs text-on-surface-variant">For transplant patients</span>
+</div>
+</div>
+<ul class="space-y-1.5 text-sm text-on-surface flex-1">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span><span>Get notified when a kidney offer is available</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span><span>Review offer details and accept or decline in-app</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span><span>Pre-transplant questionnaire and document upload</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span><span>Message your care team, with voice-to-text</span></li>
+</ul>
+<a class="self-start inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold shadow-sm hover:scale-105 active:scale-95 transition-all" href="https://play.google.com/store/apps/details?id=com.organoptima.patientapp" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0"><path d="M3.6 1.8a1.5 1.5 0 0 0-.6 1.2v18a1.5 1.5 0 0 0 .6 1.2l10.1-10.2L3.6 1.8Zm11.5 8.8L5.4.9l12.4 7.1-2.7 2.6Zm0 2.8 2.7 2.6L5.4 23.1l9.7-9.7Zm3.9-4.7 3 1.7a1.5 1.5 0 0 1 0 2.6l-3 1.7-3-3 3-3Z"/></svg><span>Google Play</span></a>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-sm font-semibold">React Native</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-sm font-semibold">Push Notifications</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-sm font-semibold">Secure Chat</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-sm font-semibold">Phone OTP Sign-In</span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-sm font-semibold">Light &amp; Dark Themes</span>
+</div>
+</div>
+<!-- Right Mockup Visual (Transplant Call + Kidney Call) -->
+<div class="lg:col-span-5 relative flex items-center justify-center min-h-[420px]">
+<!-- Phone A: Transplant Call -->
+<div class="w-52 sm:w-56 rounded-[2.2rem] p-2 bg-on-surface shadow-xl rotate-[-6deg] z-10 hover:rotate-0 transition-transform">
+<div class="w-full h-80 rounded-[1.8rem] bg-surface-container-lowest p-3.5 flex flex-col gap-2">
+<div class="h-3 w-16 bg-on-surface mx-auto rounded-full mb-1"></div>
+<div class="flex justify-between items-center">
+<span class="text-[11px] font-bold text-on-surface">Transplant Call</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">notifications</span>
+</div>
+<span class="text-[9px] font-bold uppercase tracking-wider text-outline">OPO Donor Wall</span>
+<div class="flex items-center gap-2 p-2 rounded-xl bg-secondary-fixed/40">
+<span class="shrink-0 w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center material-symbols-outlined text-[16px] text-secondary">water_drop</span>
+<div class="leading-tight min-w-0"><span class="text-[10px] font-bold text-on-surface block truncate">Blood group</span><span class="text-[9px] text-on-surface-variant block truncate">Filter offers</span></div>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-xl bg-primary-fixed/40">
+<span class="shrink-0 w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<div class="leading-tight min-w-0"><span class="text-[10px] font-bold text-on-surface block truncate">Cold ischemia time</span><span class="text-[9px] text-on-surface-variant block truncate">Filter offers</span></div>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-xl bg-tertiary-fixed/40">
+<span class="shrink-0 w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center material-symbols-outlined text-[16px] text-secondary">near_me</span>
+<div class="leading-tight min-w-0"><span class="text-[10px] font-bold text-on-surface block truncate">OPO distance</span><span class="text-[9px] text-on-surface-variant block truncate">Filter offers</span></div>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-xl bg-surface-container-low">
+<span class="shrink-0 w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center material-symbols-outlined text-[16px] text-secondary">task_alt</span>
+<div class="leading-tight min-w-0"><span class="text-[10px] font-bold text-on-surface block truncate">Pending tasks</span><span class="text-[9px] text-on-surface-variant block truncate">Reminders before expiry</span></div>
+</div>
+</div>
+</div>
+<!-- Phone B: Kidney Call -->
+<div class="w-52 sm:w-56 rounded-[2.2rem] p-2 bg-on-surface shadow-2xl rotate-[6deg] z-20 -ml-16 sm:-ml-12 hover:rotate-0 transition-transform">
+<div class="w-full h-88 rounded-[1.8rem] bg-surface-container-lowest p-3.5 flex flex-col gap-2.5">
+<div class="h-3 w-16 bg-on-surface mx-auto rounded-full mb-1"></div>
+<span class="text-[11px] font-bold text-on-surface block">Kidney Call</span>
+<div class="p-2.5 rounded-xl bg-secondary-fixed/50 space-y-1">
+<div class="flex items-center gap-1 text-[10px] font-bold text-secondary"><span class="material-symbols-outlined text-[14px]">notifications_active</span><span>New kidney offer</span></div>
+<p class="text-[10px] text-on-surface-variant">Your transplant centre shared an offer for you to review.</p>
+</div>
+<div class="grid grid-cols-2 gap-1.5">
+<span class="py-2 rounded-full bg-secondary text-on-secondary text-[10px] font-bold text-center">Accept</span>
+<span class="py-2 rounded-full bg-surface-container text-on-surface text-[10px] font-bold text-center">Decline</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-xl bg-surface-container-low">
+<span class="shrink-0 w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center material-symbols-outlined text-[16px] text-secondary">assignment</span>
+<div class="leading-tight min-w-0"><span class="text-[10px] font-bold text-on-surface block truncate">Questionnaire</span><span class="text-[9px] text-on-surface-variant block truncate">Pre-transplant</span></div>
+</div>
+<div class="mt-auto flex items-center gap-1.5 p-2 rounded-full bg-surface-container-low text-[10px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">mic</span><span>Message your care team…</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TECHNICAL SKILLS TOOLKIT -->
+<section class="w-full px-gutter-mobile md:px-gutter py-space-xl bg-surface" id="skills">
+<div class="max-w-7xl mx-auto space-y-12">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto space-y-3">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Comprehensive Capabilities</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">My Developer Toolkit 🛠️</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Hand-picked tools, runtimes, protocols, and modern development agents that power my day-to-day workflow.
+        </p>
+</div>
+<!-- Bento Grid Toolkit -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Category 1: Mobile Development -->
+<div class="bg-surface-container-low rounded-3xl p-6 shadow-sm space-y-4 hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">phone_iphone</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Mobile Engineering</h3>
+<span class="text-xs text-on-surface-variant">Core Specialty</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">React Native</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Expo / Expo Go</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Expo Router</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Reanimated 3</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Gesture Handler</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Fabric / Bridgeless</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Native Modules</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">iOS Xcode &amp; Android Studio</span>
+</div>
+</div>
+<!-- Category 2: Languages & Runtime -->
+<div class="bg-surface-container-low rounded-3xl p-6 shadow-sm space-y-4 hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">code_blocks</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Languages &amp; Core</h3>
+<span class="text-xs text-on-surface-variant">Strong Foundation</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">TypeScript 5</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">JavaScript (ES6+)</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">HTML5 &amp; CSS3</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Tailwind CSS / NativeWind</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">JSON Schema</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Asynchronous JS</span>
+</div>
+</div>
+<!-- Category 3: Backend & Services -->
+<div class="bg-surface-container-low rounded-3xl p-6 shadow-sm space-y-4 hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">dns</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Backend &amp; Cloud</h3>
+<span class="text-xs text-on-surface-variant">APIs &amp; Storage</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Node.js</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Fastify</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Firebase / FCM</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">PostgreSQL</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">AWS Amplify</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">RESTful APIs</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">WebSockets</span>
+</div>
+</div>
+<!-- Category 4: HealthTech & Standards -->
+<div class="bg-surface-container-low rounded-3xl p-6 shadow-sm space-y-4 hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">medical_services</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Healthcare Tech</h3>
+<span class="text-xs text-on-surface-variant">Compliance &amp; EHR</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">SMART on FHIR</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">HL7 / FHIR JSON</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">HIPAA Guidelines</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">EHR Interoperability</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Clinical Workflows</span>
+</div>
+</div>
+<!-- Category 5: Hardware & IoT -->
+<div class="bg-surface-container-low rounded-3xl p-6 shadow-sm space-y-4 hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">developer_board</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Hardware &amp; IoT</h3>
+<span class="text-xs text-on-surface-variant">Sensors &amp; Microcontrollers</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">ESP32-S3 Microcontrollers</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">BME280 Sensors</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">I2C / SPI Communication</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">MQTT Protocol</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Bluetooth Low Energy (BLE)</span>
+</div>
+</div>
+<!-- Category 6: AI & Modern Workflow -->
+<div class="bg-surface-container-low rounded-3xl p-6 shadow-sm space-y-4 hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">neurology</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">AI &amp; Developer Tools</h3>
+<span class="text-xs text-on-surface-variant">10x Acceleration</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Claude Code MCP</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Cursor AI IDE</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Git &amp; GitHub Actions</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Figma to React Native</span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold shadow-sm">Flipper / Reactotron</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROFESSIONAL EXPERIENCE SECTION -->
+<section class="w-full px-gutter-mobile md:px-gutter py-space-xl bg-surface-container-low" id="experience">
+<div class="max-w-5xl mx-auto space-y-12">
+<!-- Section Header -->
+<div class="text-center space-y-3">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Career Milestones</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">My Professional Journey</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">
+          Delivering production impact across fast-moving engineering teams and healthcare innovators.
+        </p>
+</div>
+<!-- Experience Cards Timeline -->
+<div class="space-y-6">
+<!-- Experience 1: Mindbowser Inc. -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 shadow-sm space-y-6 relative overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-surface-container pb-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Software Engineer</h3>
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Current</span>
+</div>
+<p class="font-title-md text-title-md text-primary font-semibold">Mindbowser Inc.</p>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>July 2025 – Present</span>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Spearheading cross-platform mobile architecture for digital health and clinical enterprise platforms. Collaborating closely with product stakeholders, surgeons, and backend architects to deliver zero-downtime mobile tools.
+          </p>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface">Architected and deployed features for OrganOptima (Transplant Call &amp; Kidney Call), ensuring critical notifications land on surgeon devices within sub-second thresholds.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface">Streamlined HIPAA-compliant state handling, token renewal, and encrypted offline device persistence.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface">Integrated AI agentic workflows (Claude Code MCP) across development sprints.</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface text-xs font-semibold">React Native</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface text-xs font-semibold">TypeScript</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface text-xs font-semibold">Healthcare Tech</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface text-xs font-semibold">SMART on FHIR</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface text-xs font-semibold">Expo</span>
+</div>
+</div>
+<!-- Experience 2: Luminous Infoways -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 shadow-sm space-y-6 relative overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-surface-container pb-4">
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">React Native Developer</h3>
+<p class="font-title-md text-title-md text-secondary font-semibold">Luminous Infoways</p>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>May 2023 – July 2025</span>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Built, tested, and shipped multiple production React Native applications targeting both the Google Play Store and Apple App Store. Owned UI component standards and client-side performance audits.
+          </p>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface">Delivered full lifecycle mobile applications from initial wireframes to production store approval and version maintenance.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface">Integrated RESTful APIs, third-party payment gateways, geolocation services, and background synchronization.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface">Refactored legacy class components into modern TypeScript functional hooks, decreasing rendering overhead and UI stutter.</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface text-xs font-semibold">React Native</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface text-xs font-semibold">Redux Toolkit</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface text-xs font-semibold">REST APIs</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface text-xs font-semibold">App Store &amp; Play Store</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CERTIFICATIONS & LEARNING -->
+<section class="w-full px-gutter-mobile md:px-gutter py-space-xl bg-surface" id="certifications">
+<div class="max-w-7xl mx-auto space-y-12">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Certification</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Always Learning, Always Building 🎓</h2>
+</div>
+<p class="font-title-md text-title-md text-on-surface-variant max-w-md">
+          Deepening healthcare domain knowledge, cloud architectures, and modern agentic development.
+        </p>
+</div>
+<!-- Cert Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Cert 1 -->
+<div class="bg-surface-container-low rounded-3xl p-6 shadow-sm space-y-4 hover:translate-y-[-2px] transition-transform">
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">HealthTech Interop</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">SMART on FHIR Developer</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+              Certified proficiency in FHIR REST API integration, OAuth 2.0 authorization for EHR applications, and patient data security.
+            </p>
+</div>
+<div class="pt-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Certification</span>
+</div>
+</div>
+<!-- Cert 2 -->
+<div class="bg-surface-container-low rounded-3xl p-6 shadow-sm space-y-4 hover:translate-y-[-2px] transition-transform">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">local_hospital</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Clinical Standards</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">U.S. Healthcare Foundations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+              Comprehensive understanding of the US healthcare delivery model, HIPAA compliance rules, payer-provider workflows, and claims processing.
+            </p>
+</div>
+<div class="pt-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Certification</span>
+</div>
+</div>
+<!-- Cert 3 -->
+<div class="bg-surface-container-low rounded-3xl p-6 shadow-sm space-y-4 hover:translate-y-[-2px] transition-transform">
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Advanced Domain</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">U.S. Healthcare Master Certification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+              Advanced specialization in clinical informatics, organ procurement network models, and real-time medical alert routing systems.
+            </p>
+</div>
+<div class="pt-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Certification</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CREATIVE LAB / HARDWARE & AI EXPERIMENTS -->
+<section class="w-full px-gutter-mobile md:px-gutter py-space-xl bg-surface-container-low" id="lab">
+<div class="max-w-7xl mx-auto space-y-12">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Beyond Commercial Apps</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">The Creative Lab 🧪</h2>
+</div>
+<p class="font-title-md text-title-md text-on-surface-variant max-w-md">
+          Experiments, deep dives, and write-ups I've shared with the developer community.
+        </p>
+</div>
+<!-- Lab Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Lab 1: Claude Code + Google Stitch via MCP -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 shadow-sm flex flex-col gap-5 hover:translate-y-[-2px] transition-transform">
+<div class="w-full h-36 rounded-2xl bg-gradient-to-br from-primary-fixed via-surface-container to-tertiary-fixed relative flex items-center justify-center overflow-hidden">
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-xs font-bold shadow-sm">Agentic Dev</span>
+<span class="w-16 h-16 rounded-2xl bg-surface-container-lowest/80 shadow-md flex items-center justify-center material-symbols-outlined text-[34px] text-primary">hub</span>
+</div>
+<div class="space-y-2 flex-1">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Claude Code + Google Stitch via MCP</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Connected Google Stitch to Claude Code through MCP to see if AI can bridge the gap between UI design and React Native development.</p>
+<ul class="space-y-1.5 pt-1 text-sm text-on-surface">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-primary mt-0.5">check_circle</span><span>Cleaner, more cohesive UI exploration</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-primary mt-0.5">check_circle</span><span>A more connected design-to-code workflow</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-primary mt-0.5">check_circle</span><span>AI speeds things up, not replaces product thinking</span></li>
+</ul>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-on-surface text-surface-container-lowest hover:bg-primary font-label-sm text-label-sm font-bold transition-colors" href="https://www.linkedin.com/posts/suyog-nagawade_reactnative-claudecode-googlestitch-activity-7517875739552235520-ZYDm" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg><span>View Post</span></a>
+</div>
+</div>
+<!-- Lab 2: iPhone Duo Simulator -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 shadow-sm flex flex-col gap-5 hover:translate-y-[-2px] transition-transform">
+<div class="w-full h-36 rounded-2xl bg-gradient-to-br from-secondary-fixed via-surface-container to-primary-fixed relative flex items-center justify-center overflow-hidden">
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-xs font-bold shadow-sm">New Devices</span>
+<span class="w-16 h-16 rounded-2xl bg-surface-container-lowest/80 shadow-md flex items-center justify-center material-symbols-outlined text-[34px] text-secondary">devices_fold</span>
+</div>
+<div class="space-y-2 flex-1">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Testing on the iPhone Duo Simulator</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Ran one of our apps on the new foldable iPhone Duo in Xcode Simulator to explore how apps adapt to a new form factor.</p>
+<ul class="space-y-1.5 pt-1 text-sm text-on-surface">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span><span>Adaptive UI across changing screen sizes</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span><span>Testing device states before physical hardware</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span><span>Building apps that adapt, not just work</span></li>
+</ul>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-on-surface text-surface-container-lowest hover:bg-primary font-label-sm text-label-sm font-bold transition-colors" href="https://www.linkedin.com/posts/suyog-nagawade_iphoneduo-xcode-reactnative-activity-7516463693933666304-g24P" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg><span>View Post</span></a>
+</div>
+</div>
+<!-- Lab 3: Firebase MFA in React Native -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 shadow-sm flex flex-col gap-5 hover:translate-y-[-2px] transition-transform">
+<div class="w-full h-36 rounded-2xl bg-gradient-to-br from-tertiary-fixed via-surface-container to-secondary-fixed relative flex items-center justify-center overflow-hidden">
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-xs font-bold shadow-sm">App Security</span>
+<span class="w-16 h-16 rounded-2xl bg-surface-container-lowest/80 shadow-md flex items-center justify-center material-symbols-outlined text-[34px] text-tertiary">shield_lock</span>
+</div>
+<div class="space-y-2 flex-1">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Multi-Factor Authentication with Firebase</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Implemented MFA in a React Native CLI project, so a leaked password alone is no longer enough to get into an account.</p>
+<ul class="space-y-1.5 pt-1 text-sm text-on-surface">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">check_circle</span><span>Email/Password and Google Sign-In</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">check_circle</span><span>Mandatory phone OTP enrollment, no bypass</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">check_circle</span><span>OTP on every login with a navigation gate</span></li>
+</ul>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-on-surface text-surface-container-lowest hover:bg-primary font-label-sm text-label-sm font-bold transition-colors" href="https://www.linkedin.com/posts/suyog-nagawade_github-suyogmbmulti-factor-authentication-mfa-in-a-react-native-app-activity-7435397127419084800-mmXN" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg><span>View Post</span></a> <a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm font-bold transition-colors" href="https://github.com/suyogmb/Multi-Factor-Authentication-MFA-in-a-React-Native-App" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 shrink-0"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>Source Code</span></a>
+</div>
+</div>
+<!-- Lab 4: RTK Query article -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 shadow-sm flex flex-col gap-5 hover:translate-y-[-2px] transition-transform">
+<div class="w-full h-36 rounded-2xl bg-gradient-to-br from-primary-fixed via-surface-container to-secondary-fixed relative flex items-center justify-center overflow-hidden">
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-xs font-bold shadow-sm">Article</span>
+<span class="w-16 h-16 rounded-2xl bg-surface-container-lowest/80 shadow-md flex items-center justify-center material-symbols-outlined text-[34px] text-primary">article</span>
+</div>
+<div class="space-y-2 flex-1">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">RTK Query: Simpler API Calls in Redux</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Published a guide on how RTK Query makes data fetching in Redux cleaner and faster.</p>
+<ul class="space-y-1.5 pt-1 text-sm text-on-surface">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-primary mt-0.5">check_circle</span><span>Less boilerplate for API calls</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-primary mt-0.5">check_circle</span><span>Automatic caching and smart refetching</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-primary mt-0.5">check_circle</span><span>Auto-generated hooks</span></li>
+</ul>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-on-surface text-surface-container-lowest hover:bg-primary font-label-sm text-label-sm font-bold transition-colors" href="https://www.linkedin.com/posts/suyog-nagawade_rtk-query-explained-better-data-fetching-activity-7434805410391330816-OdcS" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg><span>View Post</span></a> <a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm font-bold transition-colors" href="https://www.mindbowser.com/rtk-query-redux-guide/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">menu_book</span><span>Read Article</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="w-full px-gutter-mobile md:px-gutter py-space-xl bg-surface" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="bg-surface-container rounded-3xl p-8 lg:p-14 shadow-sm relative overflow-hidden">
+<!-- Ambient accents -->
+<div class="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-secondary-fixed/50 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-primary-fixed/50 blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
+<!-- Left Column: Contact Copy & Direct Details -->
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">waving_hand</span>
+<span>Let's Talk</span>
+</div>
+<h2 class="font-headline-lg text-headline-md lg:text-headline-lg text-on-surface font-bold tracking-tight">
+              Have an Idea? Let's Build Something Amazing! 💬
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Whether you need a full-cycle mobile app from scratch, an upgrade to React Native's New Architecture, or a healthcare-grade clinical product, my inbox is always open.
+            </p>
+<div class="space-y-4 pt-2">
+<a class="p-4 rounded-2xl bg-surface-container-lowest flex items-center gap-3.5 shadow-sm hover:translate-x-1 transition-transform group" href="mailto:suyog@example.com">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div>
+<span class="text-xs text-on-surface-variant block">Email Me</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">suyog.nagawade@example.com</span>
+</div>
+</a>
+<a class="p-4 rounded-2xl bg-surface-container-lowest flex items-center gap-3.5 shadow-sm hover:translate-x-1 transition-transform group" href="https://www.linkedin.com/in/suyog-nagawade/" rel="noopener noreferrer" target="_blank">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="w-[20px] h-[20px] shrink-0"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.725 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 4.892v6.249zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</div>
+<div>
+<span class="text-xs text-on-surface-variant block">LinkedIn Profile</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">linkedin.com/in/suyog-nagawade</span>
+</div>
+</a>
+<a class="p-4 rounded-2xl bg-surface-container-lowest flex items-center gap-3.5 shadow-sm hover:translate-x-1 transition-transform group" href="https://github.com/Suyog8383" rel="noopener noreferrer" target="_blank">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<svg aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" class="w-[20px] h-[20px] shrink-0"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</div>
+<div>
+<span class="text-xs text-on-surface-variant block">GitHub Repos</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">github.com/Suyog8383</span>
+</div>
+</a>
+</div>
+</div>
+<!-- Right Column: Interactive Contact Form -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest rounded-3xl p-8 shadow-md">
+<form class="space-y-4" id="contact-form">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-bold" for="name">Your Name</label>
+<input class="w-full px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface text-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="name" name="name" autocomplete="name" placeholder="Jane Doe" required="" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-bold" for="email">Email Address</label>
+<input class="w-full px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface text-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="email" name="email" autocomplete="email" placeholder="jane@company.com" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-bold" for="mobileNumber">Mobile Number</label>
+<input class="w-full px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface text-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="mobileNumber" name="mobileNumber" autocomplete="tel" inputmode="tel" placeholder="+91 98765 43210" pattern="\+?[0-9][0-9 \-]{6,18}" title="Digits, spaces or dashes, optional leading +" required="" type="tel"/>
+</div>
+<button class="w-full py-4 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary font-label-lg text-label-lg font-bold shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2" type="submit">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+<p class="text-xs text-center text-on-surface-variant pt-1 min-h-[1rem] transition-opacity duration-300" id="form-status" role="status" aria-live="polite"></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main><footer class="w-full bg-surface-container-low pt-space-xl pb-space-lg px-gutter-mobile md:px-gutter mt-space-xl"><div class="max-w-7xl mx-auto"><div class="bg-surface-container-lowest rounded-xl p-space-lg lg:p-space-xl shadow-[0_12px_32px_-8px_rgba(37,35,51,0.06)]"><div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg pb-space-lg border-b border-surface-container"><div class="space-y-space-xs"><div class="flex items-center gap-space-xs"><img alt="SN Mobile Developer Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-ohS9USB4OuoWxZE2FuOjdr4DiMlGegJPy_TeaEIHj5qT7rBnz9m3GCuWHuaoMsJnUSGqwUDLsks-KCvvcMsg-5pn3Vq6akwqBr5ajCWLtCfkTcPD9bdYPllgTynsUNSG4X8fq3YhTdgR_AaO1fxQT2YyPIcK4FaqTvXzOCXY89aK2BUg0aTUF31dDQTt3ltfVaBL5u9KKpW6YQ2lAj87pmS9E_3UfV5NCsIOtTTu"/><h3 class="font-headline-sm text-headline-sm text-on-surface">Suyog Nagawade</h3></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">React Native Mobile App Developer building beautiful Android &amp; iOS apps.</p></div><div class="flex flex-wrap items-center gap-space-sm"><a class="px-4 py-2 rounded-full bg-primary-fixed text-on-primary-fixed hover:bg-primary hover:text-on-primary font-label-lg text-label-lg transition-colors" data-path="projects" href="#projects">View Apps</a><a class="px-4 py-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg transition-colors" data-path="contact" href="#contact">Get in Touch</a><a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary-container transition-all shadow-[0_4px_12px_rgba(37,35,51,0.06)]" href="#"><span class="material-symbols-outlined text-[18px]">arrow_upward</span><span>Back to Top</span></a></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><p class="font-body-md text-body-md text-on-surface-variant">© 2026 Suyog Nagawade. Designed &amp; Built with ❤️</p><div class="flex items-center gap-space-md"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Architecture Notes</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Status: Open for Contracts</a></div></div></div></div></footer><script type="module" src="/src/main.js"></script>
+</body></html>
